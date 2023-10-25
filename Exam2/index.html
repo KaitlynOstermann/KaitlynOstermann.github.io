@@ -1,18 +1,200 @@
 <html>
 
 <head>
-    <title>[]Kaitlyn Ostermann Exam 2</title>
+    <title>[JNZM]Kaitlyn Ostermann Exam 2</title>
+    <style>
+        #maindiv {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        #div1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #div1left {
+            width: 200px;
+            height: 70px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        #div1right {
+            width: 200px;
+            height: 70px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #div2 {
+            height: 80px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:start;
+        }
+
+        #div3 
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #top {
+            width: 510px;
+            height: 110px;
+        }
+
+        #bottom {
+            width: 510px;
+            height: 160px;
+        }
+
+        #right {
+            width: 280px;
+        }
+
+        #div4 {
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .borderclass {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        .titleclass {
+            text-transform: uppercase;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="static/head1.png" style="height:100px;" />
-    <img src="static/head2.png" style="height:100px;" />
-    <img src="static/linkedin.png" style="height:100px;" />
-    <img src="static/html.svg" style="height:100px;" />
-    <img src="static/css.svg" style="height:100px;" />
-    <img src="static/javascript.svg" style="height:100px;" />
-    <img src="static/sqlite.svg" style="height:100px;" />
-    <img src="static/logo.svg" style="height:100px;" />
+    <div id="maindiv">
+
+        <div id="div1">
+            <div id="div1left" class="borderclass">
+                MIS 3033 Exam 2
+                <br />
+                Kaitlyn Ostermann
+            </div>
+            <div id="div1right" class="borderclass" style="display:flex; flex-direction:row;">
+                JNZM
+            </div>
+        </div>
+
+
+        <div id="div2" class="borderclass">
+            <span>
+                <img src="static/head2.png" style="height:50px; border-radius:50%;" />
+            </span>
+
+            <span>
+                Kaitlyn Ostermann
+                <br />
+                MIS Student
+            </span>
+
+            <span>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="static/linkedin.png" style="width:30px;" />
+                </a>
+            </span>
+        </div>
+
+
+
+        <div id="div3">
+            <div class="borderclass">
+                <div id="top" class="borderclass">
+                    <span class="titleclass">
+                        ABOUT ME
+                    </span>
+
+                    <br />
+
+                    <span>
+                        I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. 
+                        I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development 
+                        and Web API development.
+                    </span>
+                </div>
+
+
+
+                <div id="bottom" class="borderclass">
+                    <span class="titleclass">
+                        ACHIEVEMENTS
+                    </span>
+
+                    <br />
+                    <br />
+
+                    <div style="display:flex; flex-direction:row; justify-content:center;">
+                        <span>
+                            <img src="static/html.svg" style="height:100px;" class="borderclass" />
+                        </span>
+
+                        <span>
+                            <img src="static/css.svg" style="height:100px;" class="borderclass" />
+                        </span>
+
+                        <span>
+                            <img src="static/javascript.svg" style="height:100px;" class="borderclass" />
+                        </span>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div id="right" class="borderclass">
+                <span class="titleclass">
+                    RECENT NEWS
+                </span>
+
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li> Learned <img src="static/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="div4" class="borderclass">
+            <span style="font-weight:bold;font-size:20px;color:grey;">
+                Developed by Kaitlyn Ostermann for MIS 3033 Exam 2
+            </span>
+            <span>
+                <img src="static/logo.svg" style="height:50px;" />
+            </span>
+        </div>
+    </div>
+
+
+        <!--<img src="static/head1.png" style="height:100px;" />
+        <img src="static/head2.png" style="height:100px;" />
+        <img src="static/linkedin.png" style="height:100px;" />
+        <img src="static/html.svg" style="height:100px;" />
+        <img src="static/css.svg" style="height:100px;" />
+        <img src="static/javascript.svg" style="height:100px;" />
+        <img src="static/sqlite.svg" style="height:100px;" />
+        <img src="static/logo.svg" style="height:100px;" />-->
 </body>
 
 </html>
